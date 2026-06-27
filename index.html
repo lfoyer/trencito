@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Train train</title>
-		<style>
-			        /* Reset margin and padding */
-		body, html {
-            margin: 0;
-            padding: 0;
-            overflow: hidden; /* Prevent scrollbars */
-        }
-			/* Style for the overlay button */
-			#overlayButton {
-				position: absolute;
-				top: 10px;
-				left: 10px;
-				padding: 10px 20px;
-				background-color: #3498db;
-				color: white;
-				border: none;
-				cursor: pointer;
-				z-index: 999;
-			}
-		</style>
-		<script type="module" crossorigin src="/test/assets/index-BBqEAfmp.js"></script>
-	</head>
-	<body>
-		<button id="overlayButton">Choo choo</button>
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Trencito</title>
+        <style>
+            /* Reset margin and padding */
+            body, html {
+                margin: 0;
+                padding: 0;
+                overflow: hidden; /* Prevent scrollbars */
+            }
+
+            /* Container to hold the buttons in the top-left corner */
+            .button-container {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: 999;
+                display: flex;    /* Aligns items side-by-side */
+                gap: 10px;        /* Adds space between the buttons */
+            }
+
+            /* Style for the overlay buttons */
+            .overlayButton {
+                padding: 10px 20px;
+                background-color: #3498db;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-family: sans-serif;
+                border-radius: 4px; /* Optional: rounds the corners slightly */
+            }
+
+            .overlayButton:hover {
+                background-color: #2980b9; /* Optional: darkens button on hover */
+            }
+        </style>
+      <script type="module" crossorigin src="./assets/index-CMCZh4ZC.js"></script>
+    </head>
+    <body>
+        
+        <div class="button-container">
+            <button id="viewButton" class="overlayButton">View</button>
+            <button id="dayNightButton" class="overlayButton">Day/night</button>
+            <button id="speedButton" class="overlayButton">Speed</button>
+        </div>
+
+    </body>
 </html>
